@@ -46,6 +46,8 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			i++;
+			if (format[i] == ' ')
+				i++;
 			form_f = get_f(format[i]);
 
 			if (!form_f)
