@@ -1,5 +1,12 @@
 #include "main.h"
 
+/**
+* print_in - prints an integer
+* @ap: argumument given
+*
+* Return: lenght of argument
+*/
+
 int print_in(va_list *ap)
 {
 	va_list ap1;
@@ -10,13 +17,13 @@ int print_in(va_list *ap)
 	va_copy(ap1, *ap);
 	num = va_arg(ap1, int);
 	str = conv_in(num);
-	
+
 	if (str == NULL)
 	{
 		free(str);
 		exit(0);
 	}
-	
+
 	len = _strlen(str);
 	if (num < 0)
 		_putchar('-');

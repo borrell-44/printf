@@ -4,9 +4,9 @@
 #include <stdarg.h>
 
 /**
- * struct op - Structure of format specifiers and pointer functions
+ * struct print - Structure of format specifiers and pointer functions
  *
- * @op: The format
+ * @print: The format
  * @f: The function associated
  */
 

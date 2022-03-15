@@ -1,6 +1,13 @@
 #include "main.h"
 
-int (*get_f(char s))(va_list *ap)
+/**
+* get_f - get the function specified by parameter
+* @s: specifier given
+*
+* Return: return pointer to function
+*/
+
+int (*get_f(char s))(va_list * ap)
 {
 	print_t ops[] = {
 		{'s', print_str},
