@@ -7,17 +7,9 @@
  * Return: number of characters printed
  */
 
-int print_amp(va_list *ap)
+int print_amp(va_list *ap __attribute__((unused)))
 {
-	va_list ap1;
-	va_copy(ap1, *ap);
-
-	if (va_arg(ap1, int) == '%')
-	{
-		_putchar('%');
-		return (1);
-	}
-
-	return (0);
+	_putchar('%');
+	return (1);
 }
 
