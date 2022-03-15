@@ -1,0 +1,55 @@
+.TH _PRINTF(1)
+.SH NAME
+.B _printf - print a format and data
+
+.SH SYNOPSIS
+.SY
+.B #include "main.h"
+.B int _printf(const char *
+.I format,
+.B ...)
+.YS
+.SH DESCRIPTION
+.B _printf
+.B The _printf function prints an output correspondent to its format.
+.BThis format will use arguments and access variables, to convert into an output.
+
+.SH Format controls found in the output of _printf in C.
+.TP
+.B %% - specifies a single percent sign (%).
+.TP
+.B %c - specifies a single character.
+.TP
+.B %d - specifies a decimal number base 10.
+.TP
+.B %s - specifies a single string.
+.TP
+.B %i - specifies an integer
+.TP
+.B %r - sprecifies a reverse character or string.
+
+.SH RETURN VALUE
+When return sucessful, these functions return the number of
+characters printed. Hence,excluding the null byte used to end output to
+strings.
+
+.SH BUGS
+  No bugs.
+
+.SH EXAMPLEs
+.B To be able to print the day of a birthday. Month and weekday are pointers for the string  day and year. Day and year will be your integers:
+
+.B #include "main.h"
+
+_printf("%s, %s %d, $d\\n", weekday, month, day, year);
+
+.SH SEE ALSO
+
+.SH Authors
+.B Griseliz Ramos & Alexander Borrell
+
+.SH COLOPHON
+.B This project was release on 2022 in Holberton School San Juan, Puerto Rico.
+
+
+
