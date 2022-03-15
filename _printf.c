@@ -1,6 +1,6 @@
 #include <unistd.h>
 #include <stdio.h>
-#include "test.h"
+#include "main.h"
 
 /**
  * _strlen - gets a string lenght
@@ -50,7 +50,8 @@ int _printf(const char *format, ...)
 
 			if (!form_f)
 				exit(99);
-			size += form_f(&ap);
+			size += form_f(&ap) - 2;
+			va_arg(ap, void *);
 		}
 		else
 			_putchar(format[i]);

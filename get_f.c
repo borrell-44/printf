@@ -1,19 +1,17 @@
-#include "test.h"
+#include "main.h"
 
 int (*get_f(char s))(va_list *ap)
 {
-	op_f ops[] = {
-		{'i', print_it},
-		{'c', print_c},
+	print_t ops[] = {
 		{'s', print_str},
-		{'d', print_di},
+		{'%', print_amp},
 		{'\0', 0}
 	};
 	int i = 0;
 
-	while (i < 5)
+	while (i < 3)
 	{
-		if (ops[i].op == s)
+		if (ops[i].print == s)
 		{
 			return (ops[i].f);
 		}
