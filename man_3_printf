@@ -1,4 +1,4 @@
-.TH _PRINTF(1)
+.TH _PRINTF(3)
 .SH NAME
 .B _printf - print a format and data
 
