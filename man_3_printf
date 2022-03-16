@@ -1,4 +1,4 @@
-.TH _PRINTF(1)
+.TH _PRINTF(3)
 .SH NAME
 .B _printf - print a format and data
 
@@ -48,6 +48,7 @@ _printf("%s, %s %d, $d\\n", weekday, month, day, year);
 
 .SH COLOPHON
 .B This project was release on 2022 in Holberton School San Juan, Puerto Rico.
+  2022-03-16
 
 
 
