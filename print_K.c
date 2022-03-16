@@ -11,6 +11,6 @@ int print_K(va_list * ap __attribute__((unused)))
 {
 	_putchar('%');
 	_putchar('K');
-	return (1);
+	return (2);
 }
 
