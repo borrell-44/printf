@@ -25,8 +25,6 @@
 .B %s - specifies a single string.
 .TP
 .B %i - specifies an integer
-.TP
-.B %r - sprecifies a reverse character or string.
 
 .SH RETURN VALUE
 When return sucessful, these functions return the number of
