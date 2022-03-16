@@ -48,6 +48,7 @@ _printf("%s, %s %d, $d\\n", weekday, month, day, year);
 
 .SH COLOPHON
 .B This project was release on 2022 in Holberton School San Juan, Puerto Rico.
+  2022-03-16
 
 
 
