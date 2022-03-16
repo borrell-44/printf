@@ -7,7 +7,7 @@
 * Return: length of argument
 */
 
-int print_ex(va_list *ap __attribute__((unused)))
+int print_ex(va_list * ap __attribute__((unused)))
 {
 	_putchar('%');
 	_putchar('!');
