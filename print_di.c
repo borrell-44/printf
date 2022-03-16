@@ -11,8 +11,8 @@ int print_di(va_list *ap)
 {
 	va_list ap1;
 	char *str;
-	int num;
-	int len;
+	int num, len;
+	int sign = 0;
 
 	va_copy(ap1, *ap);
 	num = va_arg(ap1, int);
@@ -26,11 +26,14 @@ int print_di(va_list *ap)
 
 	len = _strlen(str);
 	if (num < 0)
+	{
 		_putchar('-');
+		sign++;
+	}
 	for (num = 0; num < len; num++)
 	{
 		_putchar(str[num]);
 	}
-	return (num);
+	return (num + sign);
 }
 
