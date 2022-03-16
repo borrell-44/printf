@@ -11,6 +11,6 @@ int print_ex(va_list * ap __attribute__((unused)))
 {
 	_putchar('%');
 	_putchar('!');
-	return (1);
+	return (2);
 }
 
