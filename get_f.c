@@ -14,7 +14,7 @@ int (*get_f(char s))(va_list * ap)
 		{'%', print_amp},
 		{'c', print_c},
 		{'d', print_di},
-		{'i', print_in},
+		{'i', print_di},
 		{'\0', 0}
 	};
 	int i = 0;
