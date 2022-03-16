@@ -37,6 +37,9 @@ int _printf(const char *format, ...)
 	int length;
 	int i;
 
+	if (format == NULL)
+		exit(0);
+
 	length = _strlen(format);
 	va_start(ap, format);
 
@@ -50,7 +53,7 @@ int _printf(const char *format, ...)
 			form_f = get_f(format[i]);
 
 			if (!form_f)
-				exit(99);
+				exit(0);
 			size += form_f(&ap);
 			va_arg(ap, void *);
 		}
