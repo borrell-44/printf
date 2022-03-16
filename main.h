@@ -25,6 +25,8 @@ int print_c(va_list *ap);
 int print_amp(va_list *ap);
 int print_di(va_list *ap);
 int print_in(va_list *ap);
+int print_ex(va_list *ap);
+int print_K(va_list *ap);
 char *conv_in(int num);
 #endif
 

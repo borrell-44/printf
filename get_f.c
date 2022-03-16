@@ -15,11 +15,13 @@ int (*get_f(char s))(va_list * ap)
 		{'c', print_c},
 		{'d', print_di},
 		{'i', print_di},
-		{'\0', 0}
+		{'!', print_ex},
+		{'K', print_K},
+		{0, 0}
 	};
 	int i = 0;
 
-	while (i < 6)
+	while (i < 8)
 	{
 		if (ops[i].print == s)
 		{
