@@ -38,10 +38,9 @@ int _printf(const char *format, ...)
 	int i;
 
 	length = _strlen(format);
-	size = length;
 	va_start(ap, format);
 
-	for (i = 0; i <= length; i++)
+	for (i = 0; i < length; i++)
 	{
 		if (format[i] == '%')
 		{
@@ -52,13 +51,16 @@ int _printf(const char *format, ...)
 
 			if (!form_f)
 				exit(99);
-			size += form_f(&ap) - 2;
+			size += form_f(&ap);
 			va_arg(ap, void *);
 		}
 		else
+		{
 			_putchar(format[i]);
+			size++;
+		}
 	}
-	
+
 
 	va_end(ap);
 	return (size);
