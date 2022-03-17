@@ -11,7 +11,7 @@ int print_di(va_list *ap)
 {
 	va_list ap1;
 	char *str;
-	int num, len;
+	long int num, len;
 	int sign = 0;
 
 	va_copy(ap1, *ap);

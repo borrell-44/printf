@@ -9,11 +9,11 @@
 char *conv_in(int num)
 {
 	int hold;
-	int i = 10, count = 1, j = 0;
+	long int i = 10, count = 1, j = 0;
 	char *n, *out;
 
 	if (num < 0)
-		num *= -1;
+		num = -num ;
 	while (num >= i)
 	{
 		count++;
